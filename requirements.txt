@@ -8,6 +8,6 @@ safetensors
 huggingface_hub[hf_xet]
 diffusers @ git+https://github.com/huggingface/diffusers
 sdnq @ git+https://github.com/Disty0/sdnq.git
-gradio>=4.0.0
+gradio>=6.0.0
 pillow
 peft>=0.17.0

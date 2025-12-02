@@ -186,7 +186,8 @@ available_devices = get_available_devices()
 default_device = available_devices[0] if available_devices else "cpu"
 
 # Create Gradio interface
-with gr.Blocks(title="Z-Image Turbo UINT4") as demo:
+# delete_cache=(60, 60) means check every 60 seconds, delete files older than 60 seconds
+with gr.Blocks(title="Z-Image Turbo UINT4", delete_cache=(60, 60)) as demo:
     gr.Markdown("""
     # Z-Image Turbo UINT4
 
@@ -276,6 +277,4 @@ with gr.Blocks(title="Z-Image Turbo UINT4") as demo:
 
 
 if __name__ == "__main__":
-    # delete_cache=(0, 0) means delete temp files immediately after they're no longer needed
-    # This prevents generated images from being stored on disk longer than necessary
-    demo.launch(delete_cache=(0, 0))
+    demo.launch()
