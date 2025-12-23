@@ -4,6 +4,8 @@ import shutil
 import uuid
 
 client = Client("http://127.0.0.1:7860/")
+seed = -4000
+steps = 10
 result = client.predict(
 	prompt=(
 		"Indoor candid portrait of a young blonde adult woman sitting cross-legged on a wooden floor in a minimalist bedroom, smiling naturally toward the camera. "
@@ -14,8 +16,8 @@ result = client.predict(
 	),
 	height=256,
 	width=256,
-	steps=7,
-	seed=-255,
+	steps=steps,
+	seed=seed,
 	guidance=1,
 	device="mps",
 	lora_file=None,
@@ -27,6 +29,6 @@ result_path = result[0] if isinstance(result, (list, tuple)) else result
 output_dir = Path("gen_images")
 output_dir.mkdir(exist_ok=True)
 ext = Path(result_path).suffix or ".png"
-out_path = output_dir / f"generated_{uuid.uuid4().hex}{ext}"
+out_path = output_dir / f"{seed}_{steps}_generated_{uuid.uuid4().hex}{ext}"
 shutil.copy(result_path, out_path)
 print(f"Generated image saved at: {out_path}")
