@@ -1,0 +1,21 @@
+result = client.predict(
+	prompt=(
+		"Indoor candid portrait of a young blonde adult woman sitting cross-legged on a wooden floor in a minimalist bedroom, smiling naturally toward the camera. "
+		"She wears light-colored lingerie with an open striped shirt, relaxed unposed posture, intimate casual mood. "
+		"Direct on-camera flash lighting creating bright highlights on skin, hard shadows on the wall and floor, slightly flattened perspective. "
+		"Snapshot / point-and-shoot photography aesthetic, early-2000s film flash look, high contrast, visible texture, subtle grain. "
+		"Neutral walls, unmade bed in the background, realistic proportions, photorealistic, high detail, 4k quality."
+	),
+
+Ultra-realistic lifestyle beach photograph of an adult woman sitting relaxed on a white towel-covered beach lounger, legs comfortably apart, casual candid posture. 
+She wears a light green minimalist string bikini with thin straps and a low-rise bottom, natural athletic build, realistic body proportions. 
+She has medium-length dark brown hair tucked under a dark green baseball cap with white embroidered text, wearing dark sunglasses. 
+She is holding a fresh coconut with both hands and drinking from it using a straw, head slightly tilted downward, calm focused expression. 
+Small fine-line tattoos visible on arms, shoulders, and torso, subtle and natural. 
+Bright midday coastal sunlight casting crisp shadows on the sand and her body, strong natural directional light from above and slightly to the side, high clarity and contrast. 
+White sand beach in the foreground with textured footprints and fabric folds, turquoise-blue ocean behind her with gentle waves, several people swimming in the water in the mid-background. 
+Clear blue sky with soft distant clouds, horizon line visible. 
+Casual vacation atmosphere, candid travel photography aesthetic, no posing, no glamour styling. 
+Sharp focus on subject, deep depth of field keeping background readable but slightly softened. 
+Natural skin texture, realistic highlights, subtle sun sheen on skin, no artificial smoothing. 
+Photorealistic, high detail, true-to-life colors, lifestyle editorial realism, 4k quality.

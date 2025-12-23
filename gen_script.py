@@ -4,18 +4,18 @@ import shutil
 import uuid
 
 client = Client("http://127.0.0.1:7860/")
-seed = -256
+seed = -1
 steps = 7
 result = client.predict(
 	prompt=(
-		"Indoor candid portrait of a young blonde adult woman sitting cross-legged on a wooden floor in a minimalist bedroom, smiling naturally toward the camera. "
-		"She wears light-colored lingerie with an open striped shirt, relaxed unposed posture, intimate casual mood. "
-		"Direct on-camera flash lighting creating bright highlights on skin, hard shadows on the wall and floor, slightly flattened perspective. "
-		"Snapshot / point-and-shoot photography aesthetic, early-2000s film flash look, high contrast, visible texture, subtle grain. "
-		"Neutral walls, unmade bed in the background, realistic proportions, photorealistic, high detail, 4k quality."
+		"Outdoor candid lifestyle photograph of an adult woman sitting on a towel-covered beach lounger on a sunny white-sand beach, relaxed casual posture with legs apart, head tilted slightly downward. "
+		"She wears a light green minimalist string bikini with thin straps, a dark green baseball cap with white embroidered lettering, and dark sunglasses, holding a fresh coconut with both hands while drinking through a straw. "
+		"Bright midday natural sunlight from above and slightly to the side, creating crisp shadows on the sand and body, strong highlights and clear contrast, true outdoor coastal lighting. "
+		"Vacation travel photography aesthetic, unposed and authentic, natural body proportions, realistic skin texture with subtle sun sheen, no glamour retouching. "
+		"Textured white sand and beach loungers in the foreground, turquoise ocean waves and swimmers in the background, clear blue sky with distant clouds, photorealistic, high detail, sharp focus, 4k quality."
 	),
-	height=1024,
-	width=1024,
+	height=512,
+	width=512,
 	steps=steps,
 	seed=seed,
 	guidance=1,
