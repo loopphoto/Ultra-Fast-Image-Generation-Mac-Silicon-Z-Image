@@ -12,8 +12,8 @@ result = client.predict(
 		"Snapshot / point-and-shoot photography aesthetic, early-2000s film flash look, high contrast, visible texture, subtle grain. "
 		"Neutral walls, unmade bed in the background, realistic proportions, photorealistic, high detail, 4k quality."
 	),
-	height=512,
-	width=512,
+	height=256,
+	width=256,
 	steps=7,
 	seed=-255,
 	guidance=1,
