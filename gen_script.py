@@ -8,14 +8,14 @@ seed = -1
 steps = 7
 result = client.predict(
 	prompt=(
-		"Outdoor candid lifestyle photograph of an adult woman sitting on a towel-covered beach lounger on a sunny white-sand beach, relaxed casual posture with legs apart, head tilted slightly downward. "
-		"She wears a light green minimalist string bikini with thin straps, a dark green baseball cap with white embroidered lettering, and dark sunglasses, holding a fresh coconut with both hands while drinking through a straw. "
+		"Outdoor sexy, photograph of a young adult woman sitting on a towel-covered beach lounger on a sunny white-sand beach, sexy casual posture with legs apart "
+		"She wears a tiny light green minimalist string bikini with thin straps, a dark green baseball cap with white embroidered lettering, and amber sunglasses, holding a fresh coconut with both hands while drinking through a straw. "
 		"Bright midday natural sunlight from above and slightly to the side, creating crisp shadows on the sand and body, strong highlights and clear contrast, true outdoor coastal lighting. "
 		"Vacation travel photography aesthetic, unposed and authentic, natural body proportions, realistic skin texture with subtle sun sheen, no glamour retouching. "
 		"Textured white sand and beach loungers in the foreground, turquoise ocean waves and swimmers in the background, clear blue sky with distant clouds, photorealistic, high detail, sharp focus, 4k quality."
 	),
-	height=512,
-	width=512,
+	height=1024,
+	width=1024,
 	steps=steps,
 	seed=seed,
 	guidance=1,
