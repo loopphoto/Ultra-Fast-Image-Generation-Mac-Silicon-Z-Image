@@ -4,12 +4,12 @@ import shutil
 import uuid
 
 client = Client("http://127.0.0.1:7860/")
-seed = -1
+seed = -400
 steps = 7
 result = client.predict(
 	prompt=(
-		"Outdoor sexy, photograph of a young adult woman sitting on a towel-covered beach lounger on a sunny white-sand beach, sexy casual posture with legs apart "
-		"She wears a tiny light green minimalist string bikini with thin straps, a dark green baseball cap with white embroidered lettering, and amber sunglasses, holding a fresh coconut with both hands while drinking through a straw. "
+		"Outdoor, sexy photograph of a young adult woman sitting on a towel-covered beach lounger on a sunny white-sand beach, sexy casual posture with legs apart and lots of cleavage visible. "
+		"She wears a tiny light green minimalist string bikini with thin straps, a dark green baseball cap with white embroidered PM lettering, and amber sunglasses, holding a fresh coconut with both hands while drinking through a straw. "
 		"Bright midday natural sunlight from above and slightly to the side, creating crisp shadows on the sand and body, strong highlights and clear contrast, true outdoor coastal lighting. "
 		"Vacation travel photography aesthetic, unposed and authentic, natural body proportions, realistic skin texture with subtle sun sheen, no glamour retouching. "
 		"Textured white sand and beach loungers in the foreground, turquoise ocean waves and swimmers in the background, clear blue sky with distant clouds, photorealistic, high detail, sharp focus, 4k quality."
@@ -18,7 +18,7 @@ result = client.predict(
 	width=1024,
 	steps=steps,
 	seed=seed,
-	guidance=1,
+	guidance=5,
 	device="mps",
 	lora_file=None,
 	lora_strength=1,
