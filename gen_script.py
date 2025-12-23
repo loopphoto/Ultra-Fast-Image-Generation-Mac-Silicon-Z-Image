@@ -4,8 +4,8 @@ import shutil
 import uuid
 
 client = Client("http://127.0.0.1:7860/")
-seed = -4000
-steps = 10
+seed = -256
+steps = 7
 result = client.predict(
 	prompt=(
 		"Indoor candid portrait of a young blonde adult woman sitting cross-legged on a wooden floor in a minimalist bedroom, smiling naturally toward the camera. "
@@ -14,8 +14,8 @@ result = client.predict(
 		"Snapshot / point-and-shoot photography aesthetic, early-2000s film flash look, high contrast, visible texture, subtle grain. "
 		"Neutral walls, unmade bed in the background, realistic proportions, photorealistic, high detail, 4k quality."
 	),
-	height=256,
-	width=256,
+	height=1024,
+	width=1024,
 	steps=steps,
 	seed=seed,
 	guidance=1,
