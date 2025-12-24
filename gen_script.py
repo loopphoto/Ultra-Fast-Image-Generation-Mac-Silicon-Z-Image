@@ -4,7 +4,7 @@ import shutil
 import uuid
 
 client = Client("http://127.0.0.1:7860/")
-seed = -400
+seed = -512
 steps = 7
 result = client.predict(
 	prompt=(
@@ -18,7 +18,7 @@ result = client.predict(
 	width=1024,
 	steps=steps,
 	seed=seed,
-	guidance=5,
+	guidance=1,
 	device="mps",
 	lora_file=None,
 	lora_strength=1,
